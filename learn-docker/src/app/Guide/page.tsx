@@ -56,15 +56,15 @@ const dockerTopics = [
 const GuidePage = () => {
   return (
     <div className="max-w-4xl mx-auto py-10 px-6">
-      <h1 className="text-4xl font-bold mb-6 text-blue-600">🚢 Docker Guide</h1>
-      <p className="text-lg text-gray-700 mb-8">
+      <h1 className="text-4xl font-bold mb-6 text-rose-900">🚢 Docker Guide</h1>
+      <p className="text-lg text-gray-400 mb-8">
         A complete beginner-to-advanced Docker learning resource. Click through the sections below to explore concepts, commands, and real-world applications.
       </p>
       
       <div className="space-y-6">
         {dockerTopics.map((topic, idx) => (
-          <div key={idx} className="bg-white shadow-md rounded-lg p-6 border border-gray-200">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">{topic.title}</h2>
+          <div key={idx} className="bg-rose-100 shadow-md rounded-lg p-6 border border-gray-200">
+            <h2 className="text-2xl font-semibold mb-4 text-rose-900">{topic.title}</h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               {topic.items.map((item, i) => (
                 <li key={i}>
