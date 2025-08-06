@@ -25,7 +25,12 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <Link href="/Guide">
             <button className="rounded-full px-6 py-3 text-white bg-rose-600 hover:bg-rose-700 transition shadow-lg font-semibold">
-              📖 Explore Docker Concepts
+              📖 Explore Docker through Concepts
+            </button>
+          </Link>
+          <Link href="/Visualizations">
+            <button className="rounded-full px-6 py-3 text-white bg-rose-600 hover:bg-rose-700 transition shadow-lg font-semibold">
+              📖 Explore Docker through Visualizations
             </button>
           </Link>
         </div>
