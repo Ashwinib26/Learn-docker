@@ -67,6 +67,15 @@ const GuidePage = () => {
           </div>
         ))}
       </div>
+      <div className="flex justify-center mt-8">
+        <a
+            href="/Docker_Usage_Guide.pdf"
+            download
+            className="inline-block rounded-full px-6 py-3 bg-rose-600 text-white font-semibold shadow hover:bg-rose-700 transition"
+        >
+            ⬇️ Download: How to Use a Docker Image (PDF)
+        </a>
+    </div>
     </div>
   );
 };
