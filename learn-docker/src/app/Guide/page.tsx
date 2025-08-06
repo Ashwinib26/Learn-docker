@@ -6,10 +6,9 @@ const dockerTopics = [
   {
     title: "🧱 Docker Basics",
     items: [
-      "What is Docker?",
-      "Containers vs Virtual Machines",
-      "Installing Docker on Windows/Linux/Mac",
-      "Docker Architecture: Client, Daemon, Image, Container"
+        "Docker is an open-source platform designed to automate the deployment, scaling, and management of applications using containerization. It allows developers to package applications with all their dependencies into a standardized unit — called a container — that runs consistently across different environments.",
+        "Docker Architecture: Client, Daemon, Image, Container",
+        "Docker offers lightweight, fast, and consistent containerized environments across platforms, enabling simplified configuration, secure isolation, rapid deployment, and efficient version control."
     ]
   },
   {
@@ -26,22 +25,15 @@ const dockerTopics = [
   {
     title: "📦 Docker Images & Containers",
     items: [
-      "What is a Docker Image?",
-      "DockerHub & Custom Registries",
-      "Creating and Managing Containers",
-      "Volumes and Persistent Data",
-      "Dockerfile Basics with Example"
+        "Docker Image: A Docker Image is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software—code, runtime, libraries, environment variables, and configuration files.",
+        "           ➤ Used as a blueprint to create containers.",
+        "           ➤ Built using a Dockerfile, which contains step-by-step instructions to assemble the image.",
+
+        "Docker Container: A Docker Container is a running instance of a Docker Image. It is an isolated environment where applications execute with their dependencies bundled in.",
+        "           ➤ Containers can be started, stopped, moved, or deleted—each behaves like a lightweight virtual machine.",
+        "           ➤ Multiple containers can run on the same host, sharing the OS kernel but isolated from each other.",
     ]
-  },
-  {
-    title: "🛠️ Docker Compose",
-    items: [
-      "Why use Docker Compose?",
-      "`docker-compose.yml` structure",
-      "Example: Multi-container setup (Node.js + MongoDB)",
-      "Docker Compose commands"
-    ]
-  },
+},
   {
     title: "🚀 Real-World Use Cases",
     items: [
@@ -56,7 +48,7 @@ const dockerTopics = [
 const GuidePage = () => {
   return (
     <div className="max-w-4xl mx-auto py-10 px-6">
-      <h1 className="text-4xl font-bold mb-6 text-rose-900">🚢 Docker Guide</h1>
+      <h1 className="text-4xl font-bold mb-6 text-rose-400">🚢 Docker Guide</h1>
       <p className="text-lg text-gray-400 mb-8">
         A complete beginner-to-advanced Docker learning resource. Click through the sections below to explore concepts, commands, and real-world applications.
       </p>
@@ -68,7 +60,7 @@ const GuidePage = () => {
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               {topic.items.map((item, i) => (
                 <li key={i}>
-                  <code className="bg-gray-100 px-2 py-1 rounded text-sm">{item}</code>
+                  <code className="px-2 py-1 rounded text-sm">{item}</code>
                 </li>
               ))}
             </ul>
