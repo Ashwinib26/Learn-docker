@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "MLVerse",
-  description: "Machine Learning Guide",
+  title: "DockIt",
+  description: "Docker Learning Guide",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow px-6 py-4">{children}</main>
         <footer className="w-full py-4 px-6 bg-[#ffeef0] text-center text-sm text-neutral-600 border-t border-rose-100">
-          © {new Date().getFullYear()} MLVerse. All rights reserved.
+          © {new Date().getFullYear()} DockIt. All rights reserved.
         </footer>
       </body>
     </html>
